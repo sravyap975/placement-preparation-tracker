@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Placement Preparation Tracker Dashboard </h1>
+        <p id="date"></p>
+        <h3>Small daily improvements build big placement results.</h3>
+    </header>
+
+    <section class="add-section">
+        <input type="text" placeholder="Enter Topic" id="topic">
+        <input type="number" placeholder="Enter Duration" id="duration">
+        <button onclick="addStudy()">Add Study Session</button>   
+    </section>
+   <section class="list-section">
+        <h2>Today's Study</h2>
+        <div id="studyList"></div>
+    </section>
+</body>
+</html>
